@@ -1,0 +1,9 @@
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.DataAccess\bin\Release\TaskManagerWebApp.DataAccess.dll.config
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.DataAccess\bin\Release\TaskManagerWebApp.DataAccess.dll
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.DataAccess\bin\Release\TaskManagerWebApp.DataAccess.pdb
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.DataAccess\bin\Release\EntityFramework.dll
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.DataAccess\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.DataAccess\bin\Release\EntityFramework.xml
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.DataAccess\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.DataAccess\obj\Release\TaskManagerWebApp.DataAccess.dll
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.DataAccess\obj\Release\TaskManagerWebApp.DataAccess.pdb

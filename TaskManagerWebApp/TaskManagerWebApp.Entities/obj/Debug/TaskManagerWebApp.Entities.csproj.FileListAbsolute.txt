@@ -1,0 +1,4 @@
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.Entities\bin\Debug\TaskManagerWebApp.Entities.dll
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.Entities\bin\Debug\TaskManagerWebApp.Entities.pdb
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.Entities\obj\Debug\TaskManagerWebApp.Entities.dll
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.Entities\obj\Debug\TaskManagerWebApp.Entities.pdb

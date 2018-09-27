@@ -1,0 +1,10 @@
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.Business\bin\Release\TaskManagerWebApp.Business.dll
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.Business\bin\Release\TaskManagerWebApp.Business.pdb
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.Business\bin\Release\TaskManagerWebApp.DataAccess.dll
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.Business\bin\Release\EntityFramework.dll
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.Business\bin\Release\TaskManagerWebApp.DataAccess.pdb
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.Business\bin\Release\TaskManagerWebApp.DataAccess.dll.config
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.Business\bin\Release\EntityFramework.xml
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.Business\obj\Release\TaskManagerWebApp.Business.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.Business\obj\Release\TaskManagerWebApp.Business.dll
+C:\Users\Admin\Documents\TaskManager\TaskManagerWebApp\TaskManagerWebApp.Business\obj\Release\TaskManagerWebApp.Business.pdb
