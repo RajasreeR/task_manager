@@ -1,0 +1,65 @@
+<div class="panel panel-primary">
+<div class="panel-body">
+<div class="row">
+    <div class="col-sm-1">Task: </div>
+  <div class="col-sm-3">
+    <input type="text" [(ngModel)]="name" class="form-control input-sm" >
+  </div>
+  <div class="col-sm-2">Parent Task: </div>
+  <div class="col-sm-6">
+      <input type="text" [(ngModel)]="parentTask" class="form-control input-sm" >
+    </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-sm-1">Priority From: </div>
+  <div class="col-sm-1">
+    <input type="text" [(ngModel)]="priorityFrom" class="form-control input-sm" >
+  </div>  
+<div class="col-sm-1">Priority To: </div>
+<div class="col-sm-1">
+  <input type="text" [(ngModel)]="priorityTo" class="form-control input-sm" >
+</div>  
+<div class="col-sm-2">Start Date: </div>
+  <div class="col-sm-2">
+      <input type="date" [(ngModel)]="startDate" class="form-control input-sm" >
+    </div>
+    <div class="col-sm-2">End Date: </div>
+  <div class="col-sm-2">
+      <input type="date" [(ngModel)]="endDate" class="form-control input-sm" >
+    </div>
+</div>
+<br>
+<div class="table-responsive">
+  <table class="table" *ngIf = 'taskList && taskList.length'>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Priority</th>
+        <th>Parent Task</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let task of filterList'>        
+        <td>{{task.name}}</td>
+        <td>{{task.priority}}</td>
+        <td>{{task.parentTask}}</td>
+        <td>{{task.startDate | date}}</td>
+        <td>{{task.endDate | date}}</td>
+        <td>
+          <button class="btn btn-primary" routerLink="/edit/{{task.id}}" >Edit</button>
+        </td>
+        <td>
+            <button class="btn btn-primary" (click)="delete(task)">Delete</button>
+          </td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
+</div>
+</div>
