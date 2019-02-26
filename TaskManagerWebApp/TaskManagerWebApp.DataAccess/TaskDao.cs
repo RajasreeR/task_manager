@@ -43,6 +43,7 @@ namespace TaskManagerWebApp.DataAccess
             using (var db = new TaskManagerEntities())
             {
                 db.Tasks.Add(taskData);
+                db.SaveChanges();
             }
         }
 

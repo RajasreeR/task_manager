@@ -103,25 +103,31 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2016 14:50:24</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
-      <publishTime>01/28/2015 04:02:42</publishTime>
+      <publishTime>05/10/2018 22:38:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>05/10/2018 22:37:02</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>05/10/2018 22:39:40</publishTime>
     </File>
     <File Include="bin/System.Web.Http.dll">
-      <publishTime>01/28/2015 04:02:54</publishTime>
+      <publishTime>05/10/2018 22:39:16</publishTime>
     </File>
     <File Include="bin/System.Web.Http.WebHost.dll">
       <publishTime>01/28/2015 04:03:46</publishTime>
     </File>
     <File Include="bin/TaskManagerWebApp.Business.dll">
-      <publishTime>09/10/2018 12:30:49</publishTime>
+      <publishTime>10/03/2018 20:54:38</publishTime>
     </File>
     <File Include="bin/TaskManagerWebApp.DataAccess.dll">
-      <publishTime>09/10/2018 12:30:48</publishTime>
+      <publishTime>10/03/2018 20:54:36</publishTime>
     </File>
     <File Include="bin/TaskManagerWebApp.DataAccess.dll.config">
       <publishTime>09/02/2018 14:08:21</publishTime>
     </File>
     <File Include="bin/TaskManagerWebApp.dll">
-      <publishTime>09/10/2018 12:31:00</publishTime>
+      <publishTime>10/03/2018 20:54:47</publishTime>
     </File>
     <File Include="bin/Unity.Abstractions.dll">
       <publishTime>09/01/2018 04:01:54</publishTime>
@@ -148,10 +154,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/13/2018 11:45:13</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>09/06/2018 20:58:37</publishTime>
+      <publishTime>09/19/2018 12:34:07</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/10/2018 12:31:01</publishTime>
+      <publishTime>10/03/2018 20:54:49</publishTime>
     </File>
   </ItemGroup>
 </Project>

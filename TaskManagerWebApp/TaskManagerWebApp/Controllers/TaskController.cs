@@ -37,7 +37,7 @@ namespace TaskManagerWebApp.Controllers
                         StartDate = task.Start_Date,
                         EndDate = task.End_Date,
                         ParentTask = task.Parent_ID,
-                        IsActive = task.IsActive.Equals(1) ? true: false
+                        IsActive = task.IsActive
 
                     });                
             }
@@ -57,7 +57,7 @@ namespace TaskManagerWebApp.Controllers
                 StartDate = task.Start_Date,
                 EndDate = task.End_Date,
                 ParentTask = task.Parent_ID,
-                IsActive = task.IsActive.Equals(1) ? true : false
+                IsActive = task.IsActive
             };
 
             return Json(taskData);
@@ -67,17 +67,26 @@ namespace TaskManagerWebApp.Controllers
         [Route("api/tasks/add")]
         public IHttpActionResult AddTask([FromBody] Models.Task task)
         {
-            var taskEntity = new DataAccess.Entities.Task()
+            try
             {
-                Task1 = task.Name,
-                Priority = task.Priority,
-                Start_Date = task.StartDate,
-                End_Date = task.EndDate,
-                IsActive = task.IsActive,
-                Parent_ID = task.ParentTask
-            };
-            taskBusiness.AddTask(taskEntity);
-            return Json("Success");
+                var taskEntity = new DataAccess.Entities.Task()
+                {
+                    Task1 = task.Name,
+                    Priority = task.Priority,
+                    Start_Date = task.StartDate,
+                    End_Date = task.EndDate,
+                    IsActive = task.IsActive,
+                    Parent_ID = task.ParentTask
+                };
+                taskBusiness.AddTask(taskEntity);
+                return Json("Success");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
 
         [HttpPut]
