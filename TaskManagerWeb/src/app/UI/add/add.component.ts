@@ -35,18 +35,31 @@ export class AddComponent implements OnInit {
 
   ngOnInit() {
     this.getParentTasks();
-    this.task = {id:0,name:"",priority:0, parentTask:"", startDate:null, endDate:null};
+    this.task = {id:0,name:"",priority:0, parentTask:"",parentTaskId: 0, startDate:null, endDate:null, isActive: true};
   }
 
   
   addTask(): void
   {
-    //code for add to be integrated
     
+    
+    var createdTask= {
+      Id:0,
+      Name: this.task.name,
+      Priority: this.task.priority,
+      ParentTask: this.task.parentTaskId,
+      StartDate: this.task.startDate,
+      EndDate: this.task.endDate,
+      IsActive: true
+    };
+    this.taskService.addTask(createdTask).subscribe(status =>{      
+      alert(status);
+      this.reset();
+    });    
   }
 
   reset(): void{
-    this.task = {id:0,name:"",priority:0, parentTask:"", startDate:null, endDate:null};
+    this.task = {id:0,name:"",priority:0, parentTask:"",parentTaskId: 0, startDate:null, endDate:null, isActive: true};
   }
 
 }

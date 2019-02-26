@@ -2,25 +2,29 @@
     <h3>{{pageTitle}}</h3>
   </div>
   <div class="panel-body">
-    <div class="row">
-      <div class="col-md-2">Name: </div>
+    <div class="row form-group">          
+     <!--   <label for="usrName" class="col-md-2">Name: </label>
+        <input type="text" [(ngModel)]= 'task.name' class="form-control col-md-4" id="usrName" />      
+    </div>-->
+    <div class="col-md-2">Name: </div>
       <div class="col-md-4">
         <input type="text" [(ngModel)]= 'task.name' />
       </div>
     </div>
     <div class="row"></div>
-    <div class="row">
+    <div class="row  ">
         <div class="col-md-2">Priority: </div>
         <div class="col-md-4">
           <input type="range" id="priority" [(ngModel)]= 'task.priority' min=0
-          max=30  />
+          max=30 />
         </div>
+          <div class="col-md-0"><label>{{task.priority}}</label></div>        
       </div>
       <div class="row"></div>
-      <div class="row">
+      <div class="row form-group">
           <div class="col-md-2">Parent Task: </div>
           <div class="col-md-4">
-            <select>
+            <select [(ngModel)] = task.parentTaskId>
               <option value="">--Select--</option>
               <option *ngFor ='let tasknames of parentTaskNames' [value]='tasknames.Id'>
                   {{tasknames.Name}}
@@ -29,21 +33,23 @@
           </div>
         </div>
         <div class="row"></div>
-        <div class="row">
+        <div class="row form-group">
             <div class="col-md-2">Start Date: </div>
             <div class="col-md-4">
-              <input type="date" name="startDate" [ngModel]= "task.startDate | date:'yyyy-MM-dd'"/>
+              <input type="date" name="startDate" [(ngModel)]= "task.startDate"/>
             </div>          
         </div>
         <div class="row"></div>
-        <div class="row">
+        <div class="row form-group">
             <div class="col-md-2">End Date: </div>
             <div class="col-md-4">
-              <input type="date" name="endDate" [ngModel] = "task.endDate | date:'yyyy-MM-dd'">
+              <input type="date" name="endDate" [(ngModel)] = "task.endDate">
             </div>          
         </div>
+        <div class="row"></div>
   </div>
-  <div class="panel">
-      <button class="btn btn-primary" (click)="addTask()">Add Task</button>
-      <button class="btn btn-primary" (click)="reset()">Reset</button>
+  <div class="container">
+      <button type="button" class="btn btn-success" (click)="addTask()">Add Task</button>
+      &nbsp;
+      <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
   </div>

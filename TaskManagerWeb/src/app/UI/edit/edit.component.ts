@@ -11,7 +11,7 @@ import { TaskserviceService } from 'src/app/Services/TaskManager/taskservice.ser
   styleUrls: ['./edit.component.css']
 })
 export class EditComponent implements OnInit {
-  task : Task;
+  task : Task = new Task();
   pageTitle: string = "Edit Task";
   parentTaskNames: any;
   constructor(private _activatedroute: ActivatedRoute,
@@ -46,15 +46,32 @@ export class EditComponent implements OnInit {
   getTaskDetail(): void{    
     const id = +this._activatedroute.snapshot.paramMap.get('id');
     this.taskService.getTask(id).subscribe(taskData =>{
-      if(this.HasValue(taskData)){
-        this.task = taskData;
+      if(this.HasValue(taskData)){             
+        this.task.id = taskData.Id;
+        this.task.name = taskData.Name;
+        this.task.startDate = taskData.StartDate;
+        this.task.endDate = taskData.EndDate;
+        this.task.priority = taskData.Priority;
+        this.task.isActive = taskData.IsActive;        
+        this.task.parentTaskId = taskData.ParentTask;
       }
-    });
-    //this.task = { id:23,name: "Task 1", priority: 15, parentTask: "Task 2", startDate: new Date(), endDate: new Date()};
+    });    
   }
   edit(){
-    alert("Edit");
-    //code to be added
+    var updatedTask= {
+      Id:this.task.id,
+      Name: this.task.name,
+      Priority: this.task.priority,
+      ParentTask: this.task.parentTaskId,
+      StartDate: this.task.startDate,
+      EndDate: this.task.endDate,
+      IsActive: this.task.isActive
+    };
+    alert (this.task.endDate);
+    this.taskService.editTask(updatedTask).subscribe(status =>{      
+      alert(status);
+      this._router.navigate(['/view']);
+    });
   }
   cancelEdit(): void{
     this._router.navigate(['/view']);

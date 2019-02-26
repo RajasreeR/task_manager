@@ -3,14 +3,14 @@
 </div>
 <br>
 <div class="panel-body">
-  <div class="row">
+  <div class="row form-group">
     <div class="col-md-2">Name: </div>
     <div class="col-md-4">
       <input type="text" [(ngModel)]= 'task.name' disabled="disabled"/>
     </div>
   </div>
   <div class="row"></div>
-  <div class="row">
+  <div class="row form-group">
       <div class="col-md-2">Priority: </div>
       <div class="col-md-4">
         <input type="range" id="priority" [(ngModel)]= 'task.priority' min=0
@@ -18,10 +18,10 @@
       </div>
     </div>
     <div class="row"></div>
-    <div class="row">
+    <div class="row form-group">
         <div class="col-md-2">Parent Task: </div>
         <div class="col-md-4">
-          <select class="select-option" [(ngModel)]='task.parentTask'>
+          <select class="select-option" [(ngModel)]= task.parentTaskId>
             <option class="option" value="">--Select--</option>
             <option class="option" *ngFor ='let tasknames of parentTaskNames' [value]=tasknames.Id>
                 {{tasknames.Name}}
@@ -30,14 +30,14 @@
         </div>
       </div>
       <div class="row"></div>
-      <div class="row">
+      <div class="row form-group">
           <div class="col-md-2">Start Date: </div>
           <div class="col-md-4">
             <input type="date" name="startDate" [ngModel]= "task.startDate | date:'yyyy-MM-dd'"/>
           </div>          
       </div>
       <div class="row"></div>
-      <div class="row">
+      <div class="row form-group">
           <div class="col-md-2">End Date: </div>
           <div class="col-md-4">
             <input type="date" name="endDate" [ngModel] = "task.endDate | date:'yyyy-MM-dd'">
@@ -47,5 +47,6 @@
 </div>
 <div class="panel">
     <button class="btn btn-primary" (click)="edit()">Update</button>
+    &nbsp;
     <button class="btn btn-primary" (click)="cancelEdit()">Cancel</button>
 </div>

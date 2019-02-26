@@ -51,10 +51,10 @@
         <td>{{task.startDate | date}}</td>
         <td>{{task.endDate | date}}</td>
         <td>
-          <button class="btn btn-primary" routerLink="/edit/{{task.id}}" >Edit</button>
+          <button class="btn btn-primary" routerLink="/edit/{{task.id}}" [disabled] = "!task.isActive">Edit</button>
         </td>
         <td>
-            <button class="btn btn-primary" (click)="delete(task)">Delete</button>
+            <button class="btn btn-primary" (click)="endTask(task)" [disabled] = "!task.isActive">End Task</button>
           </td>
       </tr>
     </tbody>
